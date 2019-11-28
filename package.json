@@ -1,6 +1,6 @@
 {
   "name": "wildcard-tree",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "A string search with wildcard implementation using a tree",
   "main": "index.js",
   "scripts": {

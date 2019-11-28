@@ -1,19 +1,14 @@
+import Node from './node';
+
 const wildcardTree = inputs => {
-  const sanitized = (inputs || [])
+  const root = new Node();
+
+  (inputs || [])
     .filter(Boolean)
     .map(a => a.trim())
-
     .filter(Boolean)
-    .map(a => a.toUpperCase());
-
-  const root = [];
-  for (let i = 0; i < sanitized.length; ++i) {
-    const index = sanitized[i].charCodeAt(0);
-    if (!root[index]) {
-      root[index] = [];
-    }
-    root[index].push(sanitized[i]);
-  }
+    .map(a => a.toUpperCase())
+    .forEach(a => root.add(a));
 
   return root;
 };

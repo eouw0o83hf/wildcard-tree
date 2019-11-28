@@ -1,15 +1,23 @@
 {
-  "name": "wildcard-tree",
-  "version": "0.0.1",
-  "description": "A string search with wildcard implementation using a tree",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "Nathan Landis",
+  "description": "A string search with wildcard implementation using a tree",
   "license": "MIT",
+  "main": "index.js",
+  "module": "index.js",
+  "name": "wildcard-tree",
+  "scripts": {
+    "test": "jest"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/eouw0o83hf/wildcard-tree"
-  }
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.7.4",
+    "babel": "^6.23.0",
+    "babel-jest": "^24.9.0",
+    "core-js": "^2.6.10",
+    "jest": "^24.9.0"
+  },
+  "version": "0.0.1"
 }
